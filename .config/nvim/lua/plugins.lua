@@ -19,6 +19,7 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp' -- Completion
+  use 'saadparwaiz1/cmp_luasnip'
   use "rafamadriz/friendly-snippets" -- Friendly snippet
 
   use 'neovim/nvim-lspconfig' -- LSP

@@ -10,6 +10,14 @@ lspconfig.setup {
 }
 
 require 'lspconfig'.tailwindcss.setup {}
-require 'lspconfig'.sumneko_lua.setup {}
+require 'lspconfig'.sumneko_lua.setup {
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = {'vim'}
+      }
+    }
+  }
+}
 require 'lspconfig'.emmet_ls.setup {}
 
