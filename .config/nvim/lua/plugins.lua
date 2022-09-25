@@ -12,6 +12,7 @@ packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Status line
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'kyazdani42/nvim-web-devicons' -- File icons 
+  use 'kyazdani42/nvim-tree.lua' -- File explorer
   use 'glepnir/lspsaga.nvim' --LSP UIs
 
   use 'onsails/lspkind-nvim' --vscode-like pictograms
