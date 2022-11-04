@@ -1,3 +1,6 @@
+## Screenshots
+![image](https://user-images.githubusercontent.com/95471659/199878282-fdf6f53a-0eeb-4ff9-b0ef-9465005bc82c.png)
+
 ## Hudy's dotfiles
 This is my own config, so DO NOT use it unless you know what it is
 
