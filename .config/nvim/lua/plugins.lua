@@ -34,6 +34,8 @@ packer.startup(function(use)
     run = ':TSUpdate'
   }
 
+  use 'numToStr/Comment.nvim' -- Smart and Powerful commenting plugin for neovim
+
   use 'windwp/nvim-ts-autotag'
   use 'windwp/nvim-autopairs'
 

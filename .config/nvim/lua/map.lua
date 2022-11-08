@@ -6,16 +6,43 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
+-- Modes
+--   normal_mode = "n",
+--   insert_mode = "i",
+--   visual_mode = "v",
+--   visual_block_mode = "x",
+--   term_mode = "t",
+--   command_mode = "c",
+
 -- New tab
 keymap.set('n', 'te', ':tabedit<CR>')
 -- Split window
 keymap.set('n', 'ss', ':split<Return><C-w>w')
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
+-- Better window navigation
+-- keymap.set("n", "<C-h>", "<C-w>h")
+-- keymap.set("n", "<C-j>", "<C-w>j")
+-- keymap.set("n", "<C-k>", "<C-w>k")
+-- keymap.set("n", "<C-l>", "<C-w>l")
+
+-- Resize with arrows
+keymap.set("n", "<C-Up>", ":resize -2<CR>")
+keymap.set("n", "<C-Down>", ":resize +2<CR>")
+keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
+keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
+
+-- Visual mode custom 
+-- keymap.set("n", "<C-Q>", "<C-v>")
+
 -- Text edit
 keymap.set('n', '<C-d>', 'yyp')
 keymap.set('n', '<A-j>', ':m .+1<CR>')
 keymap.set('n', '<A-k>', ':m .-2<CR>')
+
+keymap.set("v", "<A-k>", ":m .-2<CR>==")
+keymap.set("v", "<A-j>", ":m .+1<CR>==")
+keymap.set("v", "p", '"_dP')
 
 keymap.set('i', '<C-s>', '<Esc>:w<Return>')
 keymap.set('n', '<C-s>', ':w<CR>')
@@ -34,6 +61,8 @@ keymap.set('i', '<A-[>', '<Esc><S-I>')
 keymap.set('i', '<A-]>', '<Esc><S-A>')
 
 -- Find and replacement
-keymap.set('n', ';fs', ':%s/')
-keymap.set('i', ';fs', '<Esc>:%s/')
+keymap.set('n', '<C-k>', ':%s/')
+keymap.set('i', '<C-k>', '<Esc>:%s/')
+
+keymap.set('n', '<F2>', ':NvimTreeFindFile<CR>')
 
