@@ -14,6 +14,15 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- Prevent suspending in window
+if (vim.fn.has("win32")) then
+  keymap.set('n', '<C-z>', '<Nop>'>
+  keymap.set('i', '<C-z>', '<Nop>'>
+  keymap.set('v', '<C-z>', '<Nop>'>
+  keymap.set('x', '<C-z>', '<Nop>'>
+  keymap.set('t', '<C-z>', '<Nop>'>
+end
+
 -- New tab
 keymap.set('n', 'te', ':tabedit<CR>')
 -- Split window
