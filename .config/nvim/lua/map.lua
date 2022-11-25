@@ -21,10 +21,10 @@ keymap.set('n', 'ss', ':split<Return><C-w>w')
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Better window navigation
--- keymap.set("n", "<C-h>", "<C-w>h")
--- keymap.set("n", "<C-j>", "<C-w>j")
--- keymap.set("n", "<C-k>", "<C-w>k")
--- keymap.set("n", "<C-l>", "<C-w>l")
+keymap.set("n", "<C-h>", "<C-w>h")
+keymap.set("n", "<C-j>", "<C-w>j")
+keymap.set("n", "<C-k>", "<C-w>k")
+keymap.set("n", "<C-l>", "<C-w>l")
 
 -- Resize with arrows
 keymap.set("n", "<C-Up>", ":resize -2<CR>")
@@ -65,4 +65,8 @@ keymap.set('n', '<C-k>', ':%s/')
 keymap.set('i', '<C-k>', '<Esc>:%s/')
 
 keymap.set('n', '<F2>', ':NvimTreeFindFile<CR>')
+
+-- Add comma after "" or ''
+keymap.set('n', ',,', [[f'a, ]])
+keymap.set('n', ',.', [[f"a, ]])
 
