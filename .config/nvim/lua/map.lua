@@ -14,15 +14,6 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Prevent suspending in window
---if (vim.fn.has("win32")) then
---  keymap.set('n', '<C-z>', '<Nop>'>
---  keymap.set('i', '<C-z>', '<Nop>'>
---  keymap.set('v', '<C-z>', '<Nop>'>
---  keymap.set('x', '<C-z>', '<Nop>'>
---  keymap.set('t', '<C-z>', '<Nop>'>
---end
-
 -- New tab
 keymap.set('n', 'te', ':tabedit<CR>')
 -- Split window
@@ -35,11 +26,20 @@ keymap.set("n", "<C-j>", "<C-w>j")
 keymap.set("n", "<C-k>", "<C-w>k")
 keymap.set("n", "<C-l>", "<C-w>l")
 
+keymap.set("n", "sh", "<C-w>h")
+keymap.set("n", "sj", "<C-w>j")
+keymap.set("n", "sk", "<C-w>k")
+keymap.set("n", "sl", "<C-w>l")
+
 -- Resize with arrows
 keymap.set("n", "<C-Up>", ":resize -2<CR>")
 keymap.set("n", "<C-Down>", ":resize +2<CR>")
 keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
 keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
+
+-- Keep highligting previous visual selection after indenting lines
+keymap.set("v", ">", ">gv")
+keymap.set("v", "<", "<gv")
 
 -- Visual mode custom 
 -- keymap.set("n", "<C-Q>", "<C-v>")
@@ -78,4 +78,14 @@ keymap.set('n', '<F2>', ':NvimTreeFindFile<CR>')
 -- Add comma after "" or ''
 keymap.set('n', ',,', [[f'a, ]])
 keymap.set('n', ',.', [[f"a, ]])
+
+-- Shortcuts for searching special characters
+keymap.set('n', 'f\'\'', [[f"]])
+-- Shortcut for replacing Shift + f
+keymap.set('n', 'ff', "<S-f>")
+-- Shortcut for starting insert mode in an html attributes
+keymap.set('n', 'a..', [[f>i<Space><Space><Left>]])
+-- Deletes text content inside html tag (if text contains html tag, it not working)
+keymap.set('n', 'ditag', [[<S-t>>dt<i]])
+
 
