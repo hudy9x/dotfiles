@@ -88,4 +88,5 @@ keymap.set('n', 'a..', [[f>i<Space><Space><Left>]])
 -- Deletes text content inside html tag (if text contains html tag, it not working)
 keymap.set('n', 'ditag', [[<S-t>>dt<i]])
 
+keymap.set('n', '<leader>xx', ':TroubleToggle<CR>')
 

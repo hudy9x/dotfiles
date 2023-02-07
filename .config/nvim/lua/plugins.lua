@@ -46,5 +46,11 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
 
   use 'lewis6991/gitsigns.nvim'
+  use 'dinhhuy258/git.nvim'
+
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons"
+  }
 
 end)
