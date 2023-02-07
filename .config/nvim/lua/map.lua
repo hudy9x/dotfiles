@@ -61,7 +61,7 @@ keymap.set('n', '<C-t>', ':terminal<CR>i')
 keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
 -- Explorer
-keymap.set('n', '\'e', ':NvimTreeToggle<CR>')
+keymap.set('n', '<Space>e', ':NvimTreeToggle<CR>')
 
 -- Move to right 
 keymap.set('i', '<C-l>', '<Esc>la')
