@@ -70,8 +70,8 @@ keymap.set('i', '<A-[>', '<Esc><S-I>')
 keymap.set('i', '<A-]>', '<Esc><S-A>')
 
 -- Find and replacement
-keymap.set('n', '<C-k>', ':%s/')
-keymap.set('i', '<C-k>', '<Esc>:%s/')
+keymap.set('n', '<C-k>', ':s/')
+keymap.set('i', '<C-k>', '<Esc>:s/')
 
 keymap.set('n', '<F2>', ':NvimTreeFindFile<CR>')
 
