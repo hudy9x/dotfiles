@@ -92,3 +92,7 @@ keymap.set('n', '<leader>xx', ':TroubleToggle<CR>')
 
 keymap.set('n', 't99', [[f(]])
 
+-- Git diff 
+keymap.set('n', ';mt', ':DiffviewOpen<CR>')
+keymap.set('n', ';cmt', ':DiffviewClose<cr>')
+
