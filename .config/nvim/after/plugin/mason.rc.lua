@@ -6,19 +6,9 @@ if (not status2) then return end
 
 mason.setup {}
 lspconfig.setup {
-  ensure_installed = {'tailwindcss', 'sumneko_lua', 'emmet_ls', 'rust_analyzer'}
+  ensure_installed = {'tailwindcss', 'rust_analyzer'}
 }
 
 require 'lspconfig'.tailwindcss.setup {}
-require 'lspconfig'.sumneko_lua.setup {
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = {'vim'}
-      }
-    }
-  }
-}
-require 'lspconfig'.emmet_ls.setup {}
 require 'lspconfig'.rust_analyzer.setup {}
 

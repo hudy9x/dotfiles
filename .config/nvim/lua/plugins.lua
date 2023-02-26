@@ -54,4 +54,6 @@ packer.startup(function(use)
     requires = "nvim-tree/nvim-web-devicons"
   }
 
+  use 'anuvyklack/pretty-fold.nvim'
+
 end)
