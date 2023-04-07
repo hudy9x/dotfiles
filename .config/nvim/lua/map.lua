@@ -70,8 +70,8 @@ keymap.set('i', '<A-[>', '<Esc><S-I>')
 keymap.set('i', '<A-]>', '<Esc><S-A>')
 
 -- Find and replacement
-keymap.set('n', '<C-k>', ':%s/')
-keymap.set('i', '<C-k>', '<Esc>:%s/')
+keymap.set('n', '<C-A-f>', ':%s/')
+keymap.set('i', '<C-A-f>', '<Esc>:%s/')
 
 keymap.set('n', '<F2>', ':NvimTreeFindFile<CR>')
 
@@ -95,4 +95,6 @@ keymap.set('n', 't99', [[f(]])
 -- Git diff 
 keymap.set('n', ';mt', ':DiffviewOpen<CR>')
 keymap.set('n', ';cmt', ':DiffviewClose<cr>')
+
+keymap.set('n', '<A-S-f>', ':lua vim.lsp.buf.format()<cr>')
 
