@@ -6,9 +6,10 @@ if (not status2) then return end
 
 mason.setup {}
 lspconfig.setup {
-  ensure_installed = {'tailwindcss', 'rust_analyzer'}
+  ensure_installed = {'tailwindcss', 'rust_analyzer', 'tsserver'}
 }
 
 require 'lspconfig'.tailwindcss.setup {}
 require 'lspconfig'.rust_analyzer.setup {}
+require 'lspconfig'.tsserver.setup {}
 
