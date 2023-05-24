@@ -82,6 +82,18 @@ require("lazy").setup({
 		dependencies = {
 			'nvim-lua/plenary.nvim'
 		}
+	},
+
+	-- LSP configuration & plugins
+	{
+		'neovim/nvim-lspconfig',
+		dependencies = {
+			{'williamboman/mason.nvim', config = true},
+			'williamboman/mason-lspconfig.nvim',
+
+			-- Useful status updates for LSP
+			{ 'j-hui/fidget.nvim', opts = {} }
+		}
 	}
 
 })
