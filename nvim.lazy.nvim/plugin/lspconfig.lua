@@ -8,7 +8,13 @@ local stt_lspconfig, lspconfig = pcall(require, 'lspconfig')
 if not stt_lspconfig then return end
 
 local servers = {
-	lua_ls = {},
+	lua_ls = {
+		Lua = {
+			diagnostics = {
+				globals = { 'vim' }
+			}
+		}
+	},
 	rust_analyzer = {},
   tsserver = {}
 }

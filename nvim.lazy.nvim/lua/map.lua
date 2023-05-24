@@ -23,3 +23,13 @@ keymap.set('n', '<leader>ta', [[:tabedit<cr>:BufferLineCloseLeft<cr>:BufferLineC
 -- Keep current tab and close the others
 keymap.set('n', '<leader>to', [[:BufferLineCloseLeft<cr>:BufferLineCloseRight<cr>]])
 
+-- Format code
+-- this keymap only work if you setting lsp
+-- please see /plugin/lspconfig.lua
+keymap.set('n', '<leader>fm', ':lua vim.lsp.buf.format()<cr>')
+
+-- Save file
+keymap.set('n', '<leader>ss', ':w<cr>')
+
+
+
