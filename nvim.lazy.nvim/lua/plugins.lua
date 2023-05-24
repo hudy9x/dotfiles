@@ -16,11 +16,14 @@ local theme = require('theme')
 -- PLugins load
 require("lazy").setup({
 	theme,
+	-- Additional lua configuration, makes nvim stuff amazing!
+	{'folke/neodev.nvim', opts = {}},
+
 	-- Auto pairs {}, '', "", ()
 	{
-    -- Highlight, edit, and navigate code
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
+		-- Highlight, edit, and navigate code
+		'nvim-treesitter/nvim-treesitter',
+		build = ':TSUpdate',
 	},
 	{
 		"windwp/nvim-autopairs",
@@ -62,7 +65,7 @@ require("lazy").setup({
 	-- Add indentiation guides even on blank lines
 	{
 		'lukas-reineke/indent-blankline.nvim',
-	  opts = {
+		opts = {
 			char = '|',
 			show_trailing_blankline_indent = false,
 			-- context highlighting
@@ -110,6 +113,6 @@ require("lazy").setup({
 			-- Adds a number of user-friendly snippets
 			'rafamadriz/friendly-snippets',
 		},
-  },
+	},
 
 })
