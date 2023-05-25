@@ -15,7 +15,7 @@ vim.opt.rnu = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
--- For samrt indenting
+-- For smart indenting
 vim.opt.ai = true
 vim.opt.si = true
 
