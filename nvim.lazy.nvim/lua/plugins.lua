@@ -17,7 +17,20 @@ local theme = require('theme')
 require("lazy").setup({
 	theme,
 	-- Additional lua configuration, makes nvim stuff amazing!
+	-- it should be installed before lspconfig
 	{'folke/neodev.nvim', opts = {}},
+
+	{'phaazon/hop.nvim', version = "v2"},
+
+	-- Adds git releated signs to the gutter, as well as utilities for managing changes
+	'lewis6991/gitsigns.nvim',
+
+	-- Surround selections
+	{
+		"kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+	},
 
 	-- Auto pairs {}, '', "", ()
 	{
@@ -25,6 +38,7 @@ require("lazy").setup({
 		'nvim-treesitter/nvim-treesitter',
 		build = ':TSUpdate',
 	},
+	'windwp/nvim-ts-autotag',
 	{
 		"windwp/nvim-autopairs",
 		dependencies = { "hrsh7th/nvim-cmp" },
@@ -114,5 +128,13 @@ require("lazy").setup({
 			'rafamadriz/friendly-snippets',
 		},
 	},
+
+	-- Formatter 
+	{
+		'jose-elias-alvarez/null-ls.nvim',
+		dependencies = {
+			"nvim-lua/plenary.nvim"
+		}
+	}
 
 })
