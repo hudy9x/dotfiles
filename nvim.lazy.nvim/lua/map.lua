@@ -29,7 +29,8 @@ keymap.set('n', '<leader>to', [[:BufferLineCloseLeft<cr>:BufferLineCloseRight<cr
 keymap.set('n', '<leader>fm', ':lua vim.lsp.buf.format()<cr>')
 
 -- Save file
-keymap.set('n', '<leader>w', ':w<cr>')
+keymap.set('n', 'S', ':w<cr>')
+-- do somthing else
 
 -- Move lines and group lines left, right
 keymap.set('v', '>', '>gv')
@@ -44,10 +45,12 @@ keymap.set('v', '<S-J>', ":m '>+1<CR>gv=gv")
 
 -- Find file in NvimTree
 keymap.set('n', '<leader>ff', ':NvimTreeFindFile<cr>')
+keymap.set('n', '@', ':NvimTreeFindFile<cr>')
 
 -- Open hop for jumping into anywhere inside buffer
 keymap.set('n', '<leader>hh', ':HopLine<cr>')
 
-
+-- Duplicate line
+keymap.set('n', '<C-d>', 'yyp')
 
 

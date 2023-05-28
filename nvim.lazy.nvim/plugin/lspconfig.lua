@@ -44,6 +44,9 @@ local on_attach = function(_, bufnr)
 	nmap('sd', vim.lsp.buf.hover, 'Hover Documentation')
 	nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
+	nmap(']d', vim.diagnostic.goto_next, 'Go to next diagnostic message')
+	nmap('[d', vim.diagnostic.goto_prev, 'Go to previous diagnostic message')
+
 	-- Lesser used LSP functionality
 	nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 	nmap('<leader>wa', vim.lsp.buf.add_workspace_folder, '[W]orkspace [A]dd Folder')
