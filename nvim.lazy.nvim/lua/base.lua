@@ -1,3 +1,8 @@
+-- Disable netrw at the very start 
+-- It strongly recommended by NvimTree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Change leader key to <Space>
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -15,7 +20,7 @@ vim.opt.rnu = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
--- For samrt indenting
+-- For smart indenting
 vim.opt.ai = true
 vim.opt.si = true
 

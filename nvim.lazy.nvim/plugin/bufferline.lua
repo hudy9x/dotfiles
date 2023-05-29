@@ -12,5 +12,6 @@ bufferline.setup {
 				separator = true
 			}
 		},
+		buffer_close_icon = "×"
 	}
 }

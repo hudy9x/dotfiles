@@ -14,14 +14,31 @@ vim.opt.rtp:prepend(lazypath)
 local theme = require('theme')
 
 -- PLugins load
-require("lazy").setup({  
+require("lazy").setup({
 	theme,
+	-- Additional lua configuration, makes nvim stuff amazing!
+	-- it should be installed before lspconfig
+	{'folke/neodev.nvim', opts = {}},
+
+	{'phaazon/hop.nvim', version = "v2"},
+
+	-- Adds git releated signs to the gutter, as well as utilities for managing changes
+	'lewis6991/gitsigns.nvim',
+
+	-- Surround selections
+	{
+		"kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+	},
+
 	-- Auto pairs {}, '', "", ()
 	{
-    -- Highlight, edit, and navigate code
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
+		-- Highlight, edit, and navigate code
+		'nvim-treesitter/nvim-treesitter',
+		build = ':TSUpdate',
 	},
+	'windwp/nvim-ts-autotag',
 	{
 		"windwp/nvim-autopairs",
 		dependencies = { "hrsh7th/nvim-cmp" },
@@ -62,7 +79,7 @@ require("lazy").setup({
 	-- Add indentiation guides even on blank lines
 	{
 		'lukas-reineke/indent-blankline.nvim',
-	  opts = {
+		opts = {
 			char = '|',
 			show_trailing_blankline_indent = false,
 			-- context highlighting
@@ -93,6 +110,30 @@ require("lazy").setup({
 
 			-- Useful status updates for LSP
 			{ 'j-hui/fidget.nvim', opts = {} }
+		}
+	},
+
+	{
+		-- Autocompletion
+		'hrsh7th/nvim-cmp',
+		dependencies = {
+			-- Snippet Engine & its associated nvim-cmp source
+			'L3MON4D3/LuaSnip',
+			'saadparwaiz1/cmp_luasnip',
+
+			-- Adds LSP completion capabilities
+			'hrsh7th/cmp-nvim-lsp',
+
+			-- Adds a number of user-friendly snippets
+			'rafamadriz/friendly-snippets',
+		},
+	},
+
+	-- Formatter 
+	{
+		'jose-elias-alvarez/null-ls.nvim',
+		dependencies = {
+			"nvim-lua/plenary.nvim"
 		}
 	}
 
