@@ -48,7 +48,7 @@ keymap.set('n', '<leader>ff', ':NvimTreeFindFile<cr>')
 keymap.set('n', '@', ':NvimTreeFindFile<cr>')
 
 -- Open hop for jumping into anywhere inside buffer
-keymap.set('n', '<leader>hh', ':HopLine<cr>')
+keymap.set('n', '<leader>j', ':HopLine<cr>')
 
 -- Duplicate line
 keymap.set('n', '<C-d>', 'yyp')
