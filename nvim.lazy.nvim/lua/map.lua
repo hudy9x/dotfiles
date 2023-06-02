@@ -1,6 +1,6 @@
 local keymap = vim.keymap
 
-keymap.set('n', '<C,a>', 'gg<S-v>G')
+keymap.set('n', '<C-a>', 'gg<S-v>G')
 -- Toggle NeoTree sidebar
 keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>')
 
@@ -29,7 +29,7 @@ keymap.set('n', '<leader>to', [[:BufferLineCloseLeft<cr>:BufferLineCloseRight<cr
 keymap.set('n', '<leader>fm', ':lua vim.lsp.buf.format()<cr>')
 
 -- Save file
-keymap.set('n', 'S', ':w<cr>')
+keymap.set('n', '<C-s>', ':w<cr>')
 -- do somthing else
 
 -- Move lines and group lines left, right

@@ -52,7 +52,7 @@ require("lazy").setup({
 		event = "VeryLazy",
 		init = function()
 			vim.o.timeout = true
-			vim.o.timeoutlen = 300
+			vim.o.timeoutlen = 200
 		end,
 		opts = {
 			-- your configuration comes here
@@ -126,6 +126,8 @@ require("lazy").setup({
 			{ 'j-hui/fidget.nvim', opts = {} }
 		}
 	},
+
+	'onsails/lspkind-nvim',
 
 	{
 		-- Autocompletion

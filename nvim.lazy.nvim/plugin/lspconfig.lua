@@ -7,6 +7,8 @@ if not stt_mason_conf then return end
 local stt_lspconfig, lspconfig = pcall(require, 'lspconfig')
 if not stt_lspconfig then return end
 
+local lspkind = require('lspkind')
+
 local servers = {
 	lua_ls = {
 		Lua = {
@@ -126,4 +128,9 @@ cmp.setup {
 		{ name = 'nvim_lsp' },
 		{ name = 'luasnip' },
 	},
+
+	formatting = {
+    format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
+	}
 }
+
