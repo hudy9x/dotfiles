@@ -63,5 +63,15 @@ local function on_attach(bufnr)
 end
 
 nvimtree.setup({
-	on_attach = on_attach
+	on_attach = on_attach,
+	-- renderer = {
+	-- 	icons = {
+	-- 		glyphs = {
+	-- 			folder = {
+	-- 				default = "📁",
+	-- 				open = "📁",
+	-- 			}
+	-- 		}
+	-- 	}
+	-- }
 })

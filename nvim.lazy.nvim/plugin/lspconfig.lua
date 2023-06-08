@@ -20,7 +20,9 @@ local servers = {
 		}
 	},
 	rust_analyzer = {},
-	tsserver = {}
+	tsserver = {},
+	tailwindcss = {},
+	prismals = {}
 }
 
 local on_attach = function(_, bufnr)
