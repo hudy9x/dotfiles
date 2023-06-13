@@ -15,8 +15,8 @@ keymap.set('n', 'ss', ':split<cr><C-w>w')
 keymap.set('n', 'sv', ':vsplit<cr><C-w>w')
 
 -- Next/Prev tab page
-keymap.set('n', '<leader>h', ':BufferLineCycleNext<CR>')
-keymap.set('n', '<leader>l', ':BufferLineCyclePrev<CR>')
+keymap.set('n', '<leader>l', ':BufferLineCycleNext<CR>')
+keymap.set('n', '<leader>h', ':BufferLineCyclePrev<CR>')
 
 -- Close all tabs
 keymap.set('n', '<leader>ta', [[:tabedit<cr>:BufferLineCloseLeft<cr>:BufferLineCloseRight<cr>]])
