@@ -37,6 +37,9 @@ require("lazy").setup({
 		-- Highlight, edit, and navigate code
 		'nvim-treesitter/nvim-treesitter',
 		build = ':TSUpdate',
+		dependencies = {
+			'JoosepAlviste/nvim-ts-context-commentstring'
+		}
 	},
 	'windwp/nvim-ts-autotag',
 	{

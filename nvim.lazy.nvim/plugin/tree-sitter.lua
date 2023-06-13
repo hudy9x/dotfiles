@@ -5,5 +5,8 @@ treesitter.setup {
 	ensure_installed = {'lua', 'rust', 'tsx', 'typescript', 'vim', 'prisma'},
 	highlight = {enable = true},
 	indent = {enable = true},
-	auto_install = false
+	auto_install = false,
+	context_commentstring = {
+		enable = true
+	}
 }
