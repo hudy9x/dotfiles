@@ -43,6 +43,12 @@ keymap.set('n', '<S-J>', ':m .+1<cr>')
 keymap.set('v', '<S-K>', ":m '<-2<CR>gv=gv")
 keymap.set('v', '<S-J>', ":m '>+1<CR>gv=gv")
 
+-- Resize with arrows
+keymap.set("n", "<C-k>", ":resize -2<CR>")
+keymap.set("n", "<C-j>", ":resize +2<CR>")
+keymap.set("n", "<C-h>", ":vertical resize -2<CR>")
+keymap.set("n", "<C-l>", ":vertical resize +2<CR>")
+
 -- Find file in NvimTree
 keymap.set('n', '<leader>ff', ':NvimTreeFindFile<cr>')
 keymap.set('n', '@', ':NvimTreeFindFile<cr>')
