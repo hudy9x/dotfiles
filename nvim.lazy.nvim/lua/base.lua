@@ -1,4 +1,4 @@
--- Disable netrw at the very start 
+-- Disable netrw at the very start
 -- It strongly recommended by NvimTree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -19,6 +19,7 @@ vim.opt.rnu = true
 -- Set default indent to 2
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
+vim.opt.expandtab = true
 
 -- For smart indenting
 vim.opt.ai = true
@@ -39,4 +40,3 @@ vim.opt.updatetime = 250
 -- Ex: name NaME namE
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
