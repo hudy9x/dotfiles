@@ -76,4 +76,7 @@ keymap.set('n', '<C-d>', 'yyp')
 -- Pick any tab
 keymap.set('n', ';t', ':BufferLinePick<cr>')
 
+-- Trigger code action by nvim-code-action-menu
+keymap.set('n', '<leader>ca', ':CodeActionMenu<cr>')
+
 

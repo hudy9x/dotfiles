@@ -148,6 +148,8 @@ require("lazy").setup({
     },
   },
 
+  'weilbith/nvim-code-action-menu',
+
   -- Formatter
   {
     'jose-elias-alvarez/null-ls.nvim',

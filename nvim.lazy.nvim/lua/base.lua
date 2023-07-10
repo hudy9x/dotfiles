@@ -19,10 +19,11 @@ vim.opt.rnu = true
 -- Set default indent to 2
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
--- Using space instead tab
+--- Using space instead tab
 vim.opt.expandtab = true
--- Using tab instead space
---vim.opt.noexpandtab = true
+
+--- Using tab instead space
+---vim.opt.noexpandtab = true
 
 -- For smart indenting
 vim.opt.ai = true
