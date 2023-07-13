@@ -33,6 +33,9 @@ require("lazy").setup({
   -- Adds git releated signs to the gutter, as well as utilities for managing changes
   'lewis6991/gitsigns.nvim',
 
+  -- Git diff
+  'sindrets/diffview.nvim',
+
   -- Surround selections
   {
     "kylechui/nvim-surround",
@@ -126,7 +129,7 @@ require("lazy").setup({
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP
-      { 'j-hui/fidget.nvim',       opts = {} }
+      { 'j-hui/fidget.nvim',       branch = 'legacy', opts = {} }
     }
   },
 

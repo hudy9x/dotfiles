@@ -79,4 +79,8 @@ keymap.set('n', ';t', ':BufferLinePick<cr>')
 -- Trigger code action by nvim-code-action-menu
 keymap.set('n', '<leader>ca', ':CodeActionMenu<cr>')
 
+-- Open/close resolve conflict windows
+keymap.set('n', '<leader>dv', ':DiffviewOpen<cr>')
+keymap.set('n', '<leader>dvv', ':DiffviewClose<cr>')
+
 
