@@ -30,6 +30,8 @@ require("lazy").setup({
 
   { 'phaazon/hop.nvim',  version = "v2" },
 
+  { 'levouh/tint.nvim' },
+
   -- Adds git releated signs to the gutter, as well as utilities for managing changes
   'lewis6991/gitsigns.nvim',
 
