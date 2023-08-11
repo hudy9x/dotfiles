@@ -64,6 +64,11 @@ end
 
 nvimtree.setup({
 	on_attach = on_attach,
+  view = {
+    width = 50,
+    side = 'right'
+  }
+
 	-- renderer = {
 	-- 	icons = {
 	-- 		glyphs = {
