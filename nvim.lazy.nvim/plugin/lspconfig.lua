@@ -22,6 +22,7 @@ local servers = {
   rust_analyzer = {},
   tsserver = {},
   tailwindcss = {},
+  dockerls = {},
   prismals = {}
 }
 
