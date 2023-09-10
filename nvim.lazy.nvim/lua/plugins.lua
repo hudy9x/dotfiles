@@ -110,6 +110,12 @@ require("lazy").setup({
     }
   },
 
+  -- Vim plugin for automatically highlighting other uses
+  -- of the word under the cursor using either LSP, Tree-sitter, or regex matching.
+  {
+    'RRethy/vim-illuminate'
+  },
+
   -- "gc" to comment visual regions/lines
   -- Press `gcc` to toggle comments
   { 'numToStr/Comment.nvim', opts = {} },
