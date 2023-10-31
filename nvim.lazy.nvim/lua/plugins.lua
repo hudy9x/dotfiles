@@ -35,6 +35,14 @@ require("lazy").setup({
 
   { 'levouh/tint.nvim' },
 
+  {
+    -- make Neovim's fold look modern and keep high performance
+    'kevinhwang91/nvim-ufo',
+    dependencies = {
+      'kevinhwang91/promise-async'
+    }
+  },
+
 
   -- Adds git releated signs to the gutter, as well as utilities for managing changes
   'lewis6991/gitsigns.nvim',
