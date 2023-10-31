@@ -4,6 +4,12 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 -- Toggle NeoTree sidebar
 keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>')
 
+-- Close buffer
+keymap.set('n', '<leader>q', ':q<cr>')
+keymap.set('n', '<leader>Q', ':q<cr>')
+keymap.set('n', '<leader>qa', ':qa<cr>')
+keymap.set('n', '<leader>Qa', ':qa<cr>')
+
 -- Centering serach result
 keymap.set('n', 'n', 'nzz')
 keymap.set('n', 'N', 'Nzz')
