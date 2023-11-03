@@ -15,7 +15,7 @@ keymap.set('n', 'n', 'nzz')
 keymap.set('n', 'N', 'Nzz')
 
 -- Clear highlight text when pressing Esc
-keymap.set({'i', 'n'}, '<Esc>', '<esc>:nohl<cr>')
+keymap.set({ 'i', 'n' }, '<Esc>', '<esc>:nohl<cr>')
 
 -- Moving around windows using s + h,j,k,l
 keymap.set('n', 'sh', '<C-w>h')
@@ -81,6 +81,7 @@ keymap.set('n', '<C-d>', 'yyp')
 
 -- Pick any tab
 keymap.set('n', ';t', ':BufferLinePick<cr>')
+keymap.set('n', ';;', ':BufferLinePick<cr>')
 
 -- Trigger code action by nvim-code-action-menu
 keymap.set('n', '<leader>ca', ':CodeActionMenu<cr>')
@@ -88,5 +89,3 @@ keymap.set('n', '<leader>ca', ':CodeActionMenu<cr>')
 -- Open/close resolve conflict windows
 keymap.set('n', '<leader>dv', ':DiffviewOpen<cr>')
 keymap.set('n', '<leader>dvv', ':DiffviewClose<cr>')
-
-
