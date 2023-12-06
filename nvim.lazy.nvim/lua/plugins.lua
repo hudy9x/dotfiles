@@ -21,7 +21,8 @@ require("lazy").setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     dependencies = {
-      'JoosepAlviste/nvim-ts-context-commentstring'
+      'JoosepAlviste/nvim-ts-context-commentstring',
+      'nvim-treesitter/nvim-treesitter-textobjects',
     }
   },
   -- Additional lua configuration, makes nvim stuff amazing!
