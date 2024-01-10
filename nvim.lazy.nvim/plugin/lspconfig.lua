@@ -101,6 +101,7 @@ mason_config.setup_handlers {
 -- See `:help cmp`
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
+local cmpMenu = require 'utils.cmp-menu-appearance'
 require('luasnip.loaders.from_vscode').lazy_load()
 luasnip.config.setup {}
 
@@ -145,6 +146,12 @@ cmp.setup {
   },
 
   formatting = {
-    format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
+    -- format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
+
+    -- how to get types on the left and offset the menu:
+    -- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-get-types-on-the-left-and-offset-the-menu
+    fields = { "kind", "abbr", "menu" },
+    format = cmpMenu.format,
+
   }
 }
