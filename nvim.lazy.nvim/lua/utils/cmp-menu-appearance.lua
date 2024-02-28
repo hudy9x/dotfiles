@@ -9,10 +9,9 @@ local cmpMenu = {}
 -- vim.api.nvim_set_hl(0, "Pmenu", { fg = "#C5CDD9", bg = "#21212C" })
 
 -- highlight selection
-vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#323244", fg = "NONE" })
+vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#169DD7", fg = "#FFFFFF" })
 -- background menu
 vim.api.nvim_set_hl(0, "Pmenu", { fg = "#C5CDD9", bg = "#1C1C39" })
-
 
 vim.api.nvim_set_hl(0, "CmpItemAbbrDeprecated", { fg = "#7E8294", bg = "NONE", strikethrough = true })
 vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = "#82AAFF", bg = "NONE", bold = true })

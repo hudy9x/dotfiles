@@ -23,7 +23,9 @@ local servers = {
   tsserver = {},
   tailwindcss = {},
   dockerls = {},
-  prismals = {}
+  prismals = {},
+  gopls = {},
+  bashls = {},
 }
 
 local on_attach = function(_, bufnr)
